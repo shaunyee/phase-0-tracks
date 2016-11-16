@@ -1,0 +1,20 @@
+taking a shower Pseudocode:
+-walk into shower until under shower head
+-turn on water to a warm temperature
+	-sit under water for 20 seconds
+	-when 20 seconds are up, move head out of water range
+	-apply shampoo to head
+	-When shampoo is fully applied, place head back under water for 10 seconds
+	-when 10 seconds are up, move head out of water range
+	-apply conditioner to head
+	-move body out of water range
+	-apply soap to body
+	-step back into water
+	-wash soap off body for 20 seconds
+	-place head back into water range
+	-wash conditioner out of hair for 10 seconds
+-turn off water
+-turn and grab a towel
+-dry body with towel for 45 seconds
+-exit shower
+	
