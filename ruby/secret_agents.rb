@@ -1,3 +1,9 @@
+# Psudocode:
+# enter if they would like to encrypt or decrypt password
+# 	-enter passoword
+# 	-password will either move all letter up a positon or down a positon
+# will show next pasword to user
+
 
 def encrypt(str)
 	i=0
