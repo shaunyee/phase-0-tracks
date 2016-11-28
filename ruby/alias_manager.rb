@@ -1,4 +1,11 @@
-
+# #ask for first and last name
+# 	takes last name and puts it first
+# 	takes first name and puts it last
+# 	takes all vowels and changes it to the next vowel
+# 	takes all consonants and changes it to the next consonant
+# 	ask user if they want to add another name
+# 	if user quits, places names in stored array and prints array
+	
 
 def fake_name
 stored_names = []
