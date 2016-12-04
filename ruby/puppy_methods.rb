@@ -38,11 +38,50 @@ spot.play_dead
 
 class Student
 
-def initialize
-	puts "Initializing new student instance ..."
+  def initialize(name,test)
+
+    @name = name
+
+    @test = test
+
+  end
+
+  
+
+  def name
+
+    puts "hi Bill"
+
+  end
+
+  
+
+  def grade
+
+    puts "you scored a 90"
+
+  end
+
+  
+
+  
+
+ i = 0
+
+ until i == 50 do
+
+student = Student.new("Bill",90)
+
+i += 1
+
+arry = []
+
+arry <<  student
+
+arry.each {|name,grade| puts "#{student.name} #{student.grade}"}
+
+puts arry
+
 end
 
-def instance(n)
-	new_students = Student.new(n)
-end
 end
