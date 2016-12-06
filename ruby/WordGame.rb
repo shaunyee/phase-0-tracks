@@ -1,4 +1,4 @@
-class WordGame
+qclass WordGame
 
   attr_reader :number_of_tries, :guessed_letters, :correct_letters
 
