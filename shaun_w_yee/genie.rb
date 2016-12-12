@@ -49,5 +49,23 @@ class Genie
       p "#{key} => #{granted}"
     end
   end
-  
+  def favorite_wish
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    wishes_count = Hash.new{0}
+    
+    @submitted_wishes.each do |wish, value|
+      
+      wish.split("").each do |letter|
+        if vowels.index(letter)
+          wishes_count[wish] += 1
+        end
+      end
+      
+    end
+    wishes_count.key(wishes_count.values.max)
+    wishes_count
+  end
+end
+
+
   
