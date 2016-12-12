@@ -39,4 +39,15 @@ class Genie
     granted
   end
   
- 
+  def display_wish_history
+    
+    @submitted_wishes.each do |key, value|
+      granted = 'Not Granted'
+      if value 
+        granted = 'Granted'
+      end
+      p "#{key} => #{granted}"
+    end
+  end
+  
+  
