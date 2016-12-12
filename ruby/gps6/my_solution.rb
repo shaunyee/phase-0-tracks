@@ -28,22 +28,21 @@ class VirusPredictor
 #Takes in the same perametors as initialize method. Given the population density, it conditionally multiplies population by a given float and rounds down with the .floor method.
 
   def predicted_deaths
-    # predicted deaths is solely based on population density
-    if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
-    elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
-    elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
-    elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
-    else
-      number_of_deaths = (@population * 0.05).floor
-    end
-
-    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
-
-  end
+   # predicted deaths is solely based on population density
+   number_of_deaths =
+   if @population_density >= 200
+     (@population * 0.4)
+   elsif @population_density >= 150
+     (@population * 0.3)
+   elsif @population_density >= 100
+     (@population * 0.2)
+   elsif @population_density >= 50
+     (@population * 0.1)
+   else
+     (@population * 0.05)
+   end
+   .floor
+ end
 
 #Takes population density and state as perametors. Given the population density it adds to the speed of spread.
 
