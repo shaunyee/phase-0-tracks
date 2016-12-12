@@ -67,5 +67,15 @@ class Genie
   end
 end
 
+g = Genie.new('shaun', 28)
 
+
+wishes_to_test = ['I want to be happy', 'I want a mansion', 'I want a best friend', 'I want a girlfriend', 'I want to be rich']
+
+wishes_to_test.each do |wish| 
+  g.grant_wish(wish)
+end
+
+g.favorite_wish()
+g.display_wish_history()
   
