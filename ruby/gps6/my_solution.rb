@@ -95,3 +95,13 @@ STATE_DATA.each do |state_name,population_hash|
 end
 #=======================================================================
 # Reflection Section
+# The larger hash is a constant, which should not be changed.  The inside hashes are normal key and value type
+# #Allows access of another file in the same directory. State require relative and state the file name. Require needs the full path to the requested file to access it.
+# #loops ie .each.
+# #they were being repeated, which allowed for us to refactor
+# #accessing instance variables and iterating through a large hash.
+
+
+
+
+
