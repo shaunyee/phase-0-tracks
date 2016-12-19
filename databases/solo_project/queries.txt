@@ -1,0 +1,23 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf2 \cb0 \CocoaLigature0 sqlite> SELECT students.name, students.age, students.single_room, dorms.dorm_name FROM dorms INNER JOIN students ON dorms.student_id = students.id;\
+Joe Red|18|true|Big Bear\
+Mike Blue|19|false|Apache\
+Bill Green|18|true|Big Bear\
+Jen Yellow|18|false|Apache\
+sqlite> SELECT students.name, students.age, students.single_room, dorms.dorm_name FROM dorms OUTTER JOIN students ON dorms.student_id = students.id;\
+Error: no such column: dorms.dorm_name\
+sqlite> SELECT students.name, students.age, students.single_room, dorms.dorm_name FROM dorms FULL JOIN students ON dorms.student_id = students.id;\
+Error: RIGHT and FULL OUTER JOINs are not currently supported\
+sqlite> SELECT students.name, students.age, students.single_room, dorms.dorm_name FROM dorms LEFT JOIN students ON dorms.student_id = students.id;\
+Joe Red|18|true|Big Bear\
+Mike Blue|19|false|Apache\
+|||Colorado\
+Bill Green|18|true|Big Bear\
+Jen Yellow|18|false|Apache\
+sqlite> \
+}
