@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shaun's Deli</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript">
+
+	function toggle_div_fun(id) {
+		var divelement = document.getElementById(id);
+
+
+		if(divelement.style.display == 'none')
+			divelement.style.display ='block';
+		else
+			divelement.style.display ='none';
+	}
+	</script>
+</head>
+<h1><center><font color="black"> Welcome to Shaun's Deli!</font></center></h1>
+<body class="main" bgcolor="green">
+<br>
+<br>
+<br>
+<button onclick="toggle_div_fun('sandwhich');">Sandwhich</button>
+<div id="sandwhich">All American
+Turkey, cheddar, cranberry sauce, lettuce, Roma tomato & ranch dressing</div>
+<br>
+<img class="menu" src="sandwhich.jpg" style="width: 200;height:200px;">
+
+</div>
+<button onclick="toggle_div_fun('soda');">Sodas</button>
+<div id="soda">Coke, Diet Coke, Mountain Dew, Dr Pepper, Pepsi, Diet Pepsi</div>
+<img class="menu" src="soda.jpg" style="width: 200px;height:200px;">
+</div>
+<button onclick="toggle_div_fun('desert');">Deserts</button>
+<div id="desert">Cookies: Chocolate Chip, Peanutbutter, Oatmeal Chocolate Chip, Snickerdoodle</div>
+<img class="menu" src="desert.jpg" style="width: 200px;height:200px;">
+</div>
+</body>
+</html>

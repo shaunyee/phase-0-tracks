@@ -1,0 +1,5 @@
+jery research plan
+
+My plan for jquery is to utilize search engines to research what jquery can do.  I will utilize the more popular websites to look into this topic, and see what are the different utilizations of jquery.  In addition to search engines, i think video streaming websites such as youtube can provide a strong visual learning tool to improve the reseach.  I think that you should stop and test what you have leared whenever you learn a new topic.  For me, it helps to reassure that I can learn the new topics as I go.  Breaks are important, it helps to give your mind a break to refocus on what you are learning.
+
+Going through and testing as I learned new things was sucessful.  It allowed me to test and see if it was really what I wanted to add to the page.  I took a few breaks as I went along which helped clear my mind.  I also took in as much info as possibe, before coming up with an idea of what I wanted to achieve.
